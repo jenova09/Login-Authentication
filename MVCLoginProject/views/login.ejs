@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- <link rel="stylesheet" href="/loginstyle.css"> -->
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const message = "<%= message %>";
+            if (message) {
+                alert(message);
+            }
+        });
+    </script>
+     
+<style>
+    body{
+    
+    /* background-color: #8EC5FC; */
+    
+background-image: linear-gradient(62deg, #f2c29d 0%, #f9c770 100%);
+/* padding: 50px; */
+margin-left: 175px;
+}
+.navbar li,a{
+            display: inline;
+            float: right;
+         padding-right: 20px;
+           
+           text-decoration: none;
+           font-size: 20px;
+
+        }
+.main{
+    background-color:aliceblue;
+    border:3px solid black;
+    border-radius: 5px;
+    height: 500px;
+    width: 1000px;
+  
+
+}
+.image
+{
+    position: absolute;
+   
+}
+.main img{
+    height: 500px;
+    width:500px;
+}
+.form{
+    background-color: whitesmoke;
+    position: relative;
+    float:right;
+    border: 3px ridge skyblue;
+    /* border: transparent; */
+    border-radius: 5px;
+    height: 250px;
+    width: 300px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-right: 80px;
+}
+.form label{
+ font-size: 20px;
+}
+.form a{
+    text-decoration: none;
+}
+.form  a:hover{
+    text-decoration: underline;
+}
+</style>
+</head>
+<script>
+//     function validation()
+// {
+// var user="jenova";
+// var pass="1234";
+// // var user=document.forms["fname"]["uname"].value
+// // var pass=document.forms["fname"]["pwd"].value
+// var user1=document.getElementById("uname").value
+// var pass1= document.getElementById("pwd").value
+
+//    if (user1==user && pass1==pass)
+//    {
+//       alert("Login Success");
+//    }
+//    else{            
+//       alert("Try Again");
+//    }
+//  }
+
+</script>
+
+<body>
+
+    <div>
+        <ul class="navbar">
+         <li><a href="/">Home</a></li>
+     </ul>
+     </div> <br><br>
+ <h1 style="text-align: center;">Login Page</h1>
+   <div  class="main">
+     <div class="image">
+        <img src="https://t3.ftcdn.net/jpg/01/22/71/96/360_F_122719641_V0yw2cAOrfxsON3HeWi2Sf4iVxhv27QO.jpg" alt="">
+     </div>
+
+     
+     <div class="form" >
+        
+        <center> <h2 >LOGIN</h2>  <br></center>
+         
+    <form name="fname" action="/login" method="post">
+        <center>
+       <label for="" > User Name</label> &nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="text" name="username" id="uname" placeholder="Enter Name" required style="height: 30px;width:50%; border-radius: 4px;"  ><br><br>
+       <label for=""> Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="password" name="password" id="pwd" placeholder="Enter password" required style="height: 30px; width: 50%; border-radius: 4px;"><br><br>
+       </center><br>
+ <!-- <center><input type="submit" name="submit"></center> -->
+       <center>   <Input type="submit" name="submit" style="text-align: center;color: rgb(4, 4, 73); border-radius: 5px; width:150px;height: 35px;font-size: 16px;"></Input></center>
+        </form><br><br>
+    <p style="text-align: center;">Don't have an account Yet?</p>
+   <center><a href="/register">Register Here</a> </center> 
+     </div>
+
+   </div> 
+ </body>
+</html>
